@@ -1,7 +1,3 @@
- using System;
-
-Console.WriteLine("🌄");
-
 /* Algoritim 3: Cálculo de salário com comissão
   - Dados o salário fixo e o valo  total das vendas efetuadas por um
     vendedor
@@ -10,14 +6,18 @@ Console.WriteLine("🌄");
     valor
   - Calcular e exibir seu salário total
 */
+const decimal primeiroNivelComissao = 2000;
+const decimal porcentagemPrimeiroNivel = 0.05m;
+const decimal porcentagemApsPrimeiroNivel = 0.1m;
+
 decimal salarioFixo = 4000;
 decimal totalVendas = 6000;
 
 decimal comissao = 0;
 
-if (totalVendas > 2000)
+if (totalVendas > primeiroNivelComissao)
 {
-  comissao =(totalVendas - 2000) * 0.1m + (2000 * 0.05m);
+  comissao =(totalVendas - primeiroNivelComissao) * porcentagemApsPrimeiroNivel + (primeiroNivelComissao * porcentagemPrimeiroNivel);
   comissao = comissao ;
 }
 else
