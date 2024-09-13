@@ -1,26 +1,27 @@
  using System;
-//Console.writeLine ("Olá mundo!");
 
-/* Algoritmo 2: Calcular média de um aluno
- - Obter as 3 notas de um aluno
- - calcular a média aritmétrica
- - Exibir a média
- - Se a média for maior ou igual a 7, o aluno foi aprovado
- - senão o aluno não foi aprovado
+Console.WriteLine("🌄");
+
+/* Algoritim 3: Cálculo de salário com comissão
+  - Dados o salário fixo e o valo  total das vendas efetuadas por um
+    vendedor
+  - sabendo que ele recebe 5% de comissão sobre o valor total de
+    vendas até R$2.000,00 e mais 10% sobre do que ultrapassar esse
+    valor
+  - Calcular e exibir seu salário total
 */
-int nota1= 10;
-int nota2 = 8;
-int nota3 = 7;
+decimal salarioFixo = 4000;
+decimal totalVendas = 6000;
 
-int media = (nota1 + nota2 + nota3) / 3;
+decimal comissao = 0;
 
-Console.WriteLine($"A media é: " + media);
-
-if (media >= 7)
+if (totalVendas > 2000)
 {
-   Console.WriteLine("O aluno foi aprovado.");
+  comissao =(totalVendas - 2000) * 0.1m + (2000 * 0.05m);
+  comissao = comissao ;
 }
 else
 {
-    Console.WriteLine("O aluno foi reprovado.");
+  comissao = totalVendas * 0.05m;    
 }
+Console.WriteLine($"O Salário total é: {comissao + salarioFixo}");
