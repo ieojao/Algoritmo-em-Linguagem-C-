@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Teste_mesa1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+         //Variavel a e b 
+
+           int a = 10;
+           int b = 20;
+
+         //Calculo de C
+           
+           int c = ( a + b ) /2;
+           int c1 = c - 40;
+
+         //Vetor
+
+           int v3= a + b + c1;
+
+            Console.WriteLine("o valor do v[3] é:" + v3);
+
+
+            Console.ReadLine();
+        }
+    }
+}
